@@ -23,3 +23,9 @@ jobs:
 
       - name: Run Docker Container
         run: docker run ml-devops-demo
+
+      - name: Run Tests
+        run: pytest
+
+      - name: Deploy Container
+        run : docker run yogananda2005
