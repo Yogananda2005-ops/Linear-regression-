@@ -26,6 +26,3 @@ jobs:
 
       - name: Run Tests
         run: pytest
-
-      - name: Deploy Container
-        run : docker run yogananda2005
