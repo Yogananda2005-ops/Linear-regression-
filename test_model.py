@@ -13,10 +13,10 @@ def test_coefficient():
 def test_intercept():
     model=LinearRegression()
     model.fit(x,y)
-    assert round(model.coef_[0],2)==0.0
+    assert round(model.intercept_,2)==0.0
 
 def test_prediction():
     model=LinearRegression()
     model.fit(x,y)
     pred= model.predict([[5]])
-    assert round(model.coef_[0],2)==10.0
+    assert round(pred[0],2)==10.0
